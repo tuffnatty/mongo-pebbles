@@ -8,17 +8,16 @@ Please [cite](http://www.cs.utexas.edu/~vijay/bibtex/sosp17-pebblesdb.bib) the f
 
 The github link to PebblesDB is [here](https://github.com/utsaslab/pebblesdb.git). 
 
-### Dependencies
-PebblesDB requires libsnappy and libtool. To install on Linux, please use sudo apt-get install libsnappy-dev libtool.
-
-mongo-pebbles has been built, compiled and tested with g++-5. It may not work with other versions of g++ and other C++ compilers.
-
 ### mongo-pebbles
 mongo-pebbles is a wrapper built to allow MongoDB use PebblesDB as its backend storage engine. Currently, MongoDB uses the WiredTiger key-value store as its default storage engine. 
 
 mongo-pebbles is a modification of [mongo-rocks](https://github.com/mongodb-partners/mongo-rocks.git), thus making PebblesDB compatible with MongoDB
 
-### Assumptions
+### Dependencies
+PebblesDB requires libsnappy and libtool. To install on Linux, please use sudo apt-get install libsnappy-dev libtool.
+
+mongo-pebbles has been built, compiled and tested with g++-5. It may not work with other versions of g++ and other C++ compilers.
+
 As of now, mongo-pebbles is compatible only with MongoDB v3.4.4, and is not guaranteed to work for a different version of MongoDB. 
 
 ### Installation Steps
