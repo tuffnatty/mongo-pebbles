@@ -1,6 +1,6 @@
 
 def configure(conf, env):
-    print("Configuring rocks storage engine module")
-    if not conf.CheckCXXHeader("rocksdb/db.h"):
-        print("Could not find <rocksdb/db.h>, required for RocksDB storage engine build.")
+    print("Configuring pebbles storage engine module")
+    if not conf.CheckCXXHeader("pebblesdb/db.h"):
+        print("Could not find <pebblesdb/db.h>, required for PebblesDB storage engine build.")
         env.Exit(1)
